@@ -1,9 +1,8 @@
 within TestPackage.Component;
 model SecondComponent "Second Component"
   extends
-    TestPackage.Interface.Partial(
-      container=TestPackage.Types.Container.Bowl
-    );
+    TestPackage.Interface.PartialComponent(
+      container=TestPackage.Types.Container.Bowl);
   parameter String component_param="Second Component Param"
     annotation (Evaluate=true, Dialog(group="TestGroup"));
 
